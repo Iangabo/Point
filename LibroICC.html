@@ -1,0 +1,161 @@
+<html>
+<head>
+    <title>Introduccion a Ciencia de la Computacion 11va Edicion</title>
+    <link href="MiCss.css" rel="stylesheet" type="text/css">
+    <center><h1> Capitulo 1: Almacenamiento de Datos </h1><center>
+</head>
+<body background="portada.jpg">
+    <p1>En este capítulo vamos a considerar los temas asociados con la representación
+            y el almacenamiento de datos dentro de una computadora. Entre los
+            tipos de datos que tomaremos en consideración se incluyen los textos,
+            los valores numéricos, las imágenes, el audio y el vídeo. Buena parte de la
+            información contenida en este capítulo es también relevante en otros campos
+            distintos de la computación tradicional, como la fotografía digital, la grabación
+            y reproducción de audio/vídeo y las comunicaciones a larga distancia. 
+    </p1>
+    <h2> 1.1 Los bits y su almacenamiento </h2>
+        <p2>Dentro de las computadoras actuales, la información se codifica mediante
+                patrones de 0s y 1s. Estos dígitos se denominan bits (abreviatura de binary
+                digits, dígitos binarios). Aunque uno podría sentirse inclinado a asociar los bits
+                con valores numéricos, se trata realmente de símbolos cuyo significado depende
+                de cada aplicación concreta. En ocasiones, los patrones de bits se usan para
+                representar valores numéricos; en otros casos, representan caracteres de un
+                alfabeto y signos de puntuación, a veces representan imágenes y otras sonidos.
+        </p2>
+    <h3> Operaciones Booleanas </h3>
+        <p3>Para entender cómo se almacenan y manipulan los bits individuales dentro de
+                una computadora, es conveniente imaginar que el bit 0 representa el valor
+                falso y que el bit 1 representa el valor verdadero, porque eso nos permite pensar
+                en la manipulación de bits como si se tratara de la manipulación de valores verdadero/
+                falso. Las funciones que permiten manipular valores verdadero/
+                falso son las operaciones booleanas, en honor del matemático George Boole
+                (1815–1864), que fue un pionero en el campo de las matemáticas conocido con
+                el nombre de lógica. Tres de las operaciones booleanas básicas son AND, OR y
+                XOR (OR exclusiva), como se resume en la Figura 1.1. Estas operaciones son
+                similares a las operaciones aritméticas de multiplicación y suma, porque combinan
+                un par de valores (los datos de entrada de la operación) para generar un
+                tercer valor (la salida). Sin embargo, a diferencia de las operaciones matemáticas,
+                las operaciones booleanas combinan valores de tipo verdadero/falso en
+                lugar de valores numéricos.
+            </p3>
+
+        <img src="booleanos.jpg">
+
+        <H2>1.2 Memoria principal</H2>
+            <p4>Con el objetivo de almacenar datos, una computadora contiene un enorme conjunto
+                    de circuitos (tales como biestables), cada uno de los cuales es capaz de
+                    almacenar un único bit. Este conjunto de bits se conoce como memoria principal
+                    de la máquina.
+            </p4>
+        <h3>Organización de la memoria</h3>
+            <p5>La memoria principal de una computadora está organizada en una serie de unidades
+                    accesibles denominadas celdas, siendo el tamaño típico de celda igual a
+                    ocho bits. (Una cadena de ocho bits se denomina byte. Por tanto, una celda de
+                    memoria típica tiene una capacidad de un byte.) Las computadoras pequeñas
+                    utilizadas en electrodomésticos tales como los hornos microondas pueden disponer
+                    de memorias principales compuestas por solo unos pocos cientos de celdas,
+                    mientras que las computadoras de mayor tamaño pueden tener miles de
+                    millones de celdas en su memoria principal.
+                    Aunque no existen los conceptos de izquierda ni derecha en una computadora,
+                    normalmente tendemos a conceptualizar los bits de una celda de memoria
+                    como si estuvieran organizados en una fila. El extremo izquierdo de esta fila se
+                    denomina extremo de mayor peso y el extremo derecho se denomina extremo
+                    de menor peso. El bit más a la izquierda se denomina bit de mayor peso o bit
+                    más significativo para hacer referencia al hecho de que si interpretáramos el contenido de la celda como si representaran un valor numérico, dicho bit sería el
+                    dígito más significativo del número. De forma similar, el bit situado más a la derecha
+                    es el bit de menor peso o bit menos significativo. Por tanto, podemos representar
+                    el contenido de una celda de memoria de tamaño igual a un byte</p5>
+        <h3>Medida de la capacidad de memoria</h3>
+            <p6>Como veremos en el siguiente capítulo, es conveniente diseñar los sistemas de
+                            memoria principal de forma que el número total de celdas sea una potencia de dos.
+                            A su vez, el tamaño de las memorias en las antiguas computadoras se medía a
+                            menudo en múltiplos de 1024 (210) celdas. Puesto que 1024 es un valor muy próximo
+                            a 1000, la comunidad informática ha adoptado el prefijo kilo para hacer referencia
+                            a esta unidad. Es decir, el término kilobyte (abreviado como KB) se utilizaba
+                            para referirse a 1024 bytes. Por tanto, de una máquina con 4096 celdas de memoria
+                            se decía que tenía una memoria de 4KB (4096  4  1024). A medida que las
+                            memorias fueron teniendo mayor tamaño, esta terminología se amplió para incluir
+                            el MB (megabyte), el GB (gigabyte) y el TB (terabyte). Lamentablemente, esta aplicación
+                            de los prefijos kilo-, mega-, etc., representa una utilización incorrecta de la
+                            terminología, puesto que esos prefijos se emplean en otros campos para hacer
+                            referencia a unidades que son potencias de mil. Por ejemplo, a la hora de medir distancias, la palabra kilómetro representa 1000 metros y cuando se miden frecuencias
+                            de radio, un megahercio representa 1.000.000 de hercios. Por tanto, conviene
+                            tener cuidado al emplear esta terminología. Como regla general, los
+                            prefijos como kilo-, mega-, etc. hacen referencia a potencias de dos cuando se les
+                            utiliza en el contexto de la memoria de una computadora, mientras que en otros
+                            contextos hacen referencia a potencias de mil.</p6>
+            <h2>1.3 Almacenamiento masivo</h2>
+            <p7>Debido a la volatilidad y al tamaño limitado de la memoria principal de una computadora,
+                    la mayoría de las computadoras disponen de dispositivos de almacenamiento
+                    adicionales conocidos como sistemas de almacenamiento masivo (o de
+                    almacenamiento secundario), entre los que se incluyen los discos magnéticos, los
+                    discos CD y DVD, las cintas magnéticas y las unidades flash, de los que hablaremos
+                    más adelante. Entre las ventajas de los sistemas de almacenamiento masivo, con
+                    respecto a la memoria principal, podemos citar una menor volatilidad, mayores
+                    capacidades de almacenamiento, su bajo coste y, en muchos casos, la capacidad de
+                    extraer el medio de almacenamiento de la máquina, con el propósito de archivarlo.
+                    A menudo se emplean los términos en línea y fuera de línea para describir a
+                    aquellos dispositivos que pueden estar conectados o no a una máquina. Estar
+                    en línea significa que el dispositivo o la información están conectados y la
+                    máquina puede acceder fácilmente a ellos, sin que haya intervención humana.
+                    Estar fuera de línea significa que se requiere intervención humana para que
+                    la máquina pueda acceder al dispositivo o la información, quizá porque el dispositivo
+                    debe encenderse o porque el medio en el que se almacena la información
+                    debe introducirse en algún tipo de mecanismo.
+                    Una de las principales desventajas de los sistemas de almacenamiento
+                    masivo es que normalmente requieren algún tipo de movimiento mecánico,
+                    por lo que hace falta un tiempo considerablemente mayor para almacenar y
+                    extraer los datos del que se necesita en la memoria principal de la computadora,
+                    en la que todas las actividades se llevan a cabo de forma electrónica.</p7>
+            <h3>Sistemas magnéticos</h3>
+            <p8>Durante años, la tecnología magnética ha sido la dominante dentro del sector
+                    del almacenamiento masivo. El ejemplo más común y que todavía se utiliza es
+                    el disco magnético, en el que se utiliza un fino disco giratorio con un recubrimiento
+                    magnético para almacenar los datos (Figura 1.9). Los cabezales de lectura/
+                    escritura se colocan por encima y/o por debajo del disco, de modo que
+                    cuando el disco gira, cada cabezal recorre un círculo, denominado pista.
+                    Reposicionando los cabezales de lectura/escritura puede accederse a las distintas
+                    pistas concéntricas. En muchos casos, un sistema de almacenamiento en
+                    disco está formado por varios discos montados sobre un eje común, apilados
+                    unos encima de otros, dejando el espacio suficiente para poder deslizar los
+                    cabezales de lectura/escritura entre un disco y otro. En tales casos, los cabezales
+                    de lectura/escritura se mueven al unísono. Cada vez que se reposicionan
+                    los cabezales de lectura/escritura, pasa a estar accesible un nuevo conjunto de
+                    pistas, que se denomina cilindro.</p8>
+        <h3>Sistemas Opticos</h3>
+        <p9>Otra clase de sistemas de almacenamiento masivo utiliza la tecnología óptica.
+                Un ejemplo es el disco compacto (CD, Compact Disk). Estos discos tienen 12
+                centímetros de diámetro y están compuestos de un material reflectante,
+                cubierto con una capa protectora transparente. La información se almacena en
+                estos discos creando variaciones en sus superficies reflectantes. Esta información
+                se puede entonces extraer mediante un rayo láser que detecta las irregularidades
+                en la superficie reflectante del CD, a medida que este gira.
+                La tecnología de CD se aplicó originalmente a las grabaciones de sonido,
+                utilizando un formato de grabación conocido como CD-DA (Compact Disk-
+                Digital Audio, Disco compacto-sonido digital) y los CD utilizados hoy día para
+                el almacenamiento de datos emplean esencialmente el mismo formato. En particular,
+                la información en estos CD se almacena en una única pista que gira en
+                espiral alrededor del CD, como el surco de uno de esos discos de vinilo ya pasados
+                de moda. Sin embargo, a diferencia de esos discos de vinilo, la pista de un
+                CD se desarrolla en espiral desde el interior hacia el exterior (Figura 1.11). Esta
+                pista está dividida en unidades denominadas sectores, cada uno con sus propias
+                marcas de identificación y con una capacidad de 2KB de datos, que equivale a
+                1⁄75 de un segundo de música en el caso de las grabaciones de audio.
+                Observe que la distancia recorrida por la pista en espiral es mayor en las
+                proximidades del borde externo del disco que en las partes situadas más cerca
+                del centro. Para maximizar la capacidad de un CD, la información se almacena
+                con una densidad lineal uniforme a lo largo de toda la pista en espiral, lo que
+                quiere decir que hay más información almacenada en uno de los círculos externos
+                de la espiral que en uno de los círculos internos. A su vez, se leerán más
+                sectores en una única revolución del disco cuando el rayo láser esté explorando
+                la parte externa de la pista en espiral que cuando esté explorando la parte
+                interna de la misma. Por tanto, para obtener una tasa de transferencia de datos
+                uniforme, los reproductores de CD-DA están diseñados para que la velocidad
+                de rotación varíe dependiendo de la posición del rayo láser.</p9>
+
+
+
+
+</body>
+</html>
+    
